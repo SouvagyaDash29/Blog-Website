@@ -51,7 +51,11 @@ export const addUser = async (prevState, formData) => {
   // console.log(username, email, password, img);
   try {
     connectToDb();
-    const newUser = new User({ username, email, password, img });
+
+    const salt = await bcrypt.genSalt(10);
+    const hashedPassword = await bcrypt.hash(password, salt);
+
+    const newUser = new User({ username, email, password: hashedPassword, img });
 
     await newUser.save();
     console.log("saved to db");

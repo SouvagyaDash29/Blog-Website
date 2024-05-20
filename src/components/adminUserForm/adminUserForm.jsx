@@ -12,6 +12,7 @@ const AdminUserForm = () => {
       <h1>New Post</h1>
       <input type="text" name="username" placeholder="username" />
       <input type="text" name="email" placeholder="Email" />
+      <input type="text" name="img" placeholder="Upload Your Profile Image URL" />
       <input type="password" name="password" placeholder="password" />
       <select name="isAdmin">
         <option value="false">Is Admin?</option>
