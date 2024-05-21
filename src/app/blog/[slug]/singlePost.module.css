@@ -7,11 +7,12 @@
   .imgContainer {
     flex: 1;
     position: relative;
-    height: calc(100vh - 200px);
+    height: calc(100vh - 150px);
   }
   
   .img{
     object-fit: cover;
+    border-radius: 0.3vw;
   }
   
   .textContainer {
