@@ -3,6 +3,16 @@ import Image from "next/image";
 import Link from "next/link";
 
 const   PostCard = ({post}) => {
+
+  const dateString = post.createdAt;
+  const date = new Date(dateString);
+
+  const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+  const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+  const formattedDate = `${days[date.getDay()]} ${months[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`;
+
+
   return (
     <div className={styles.container}>
       <div className={styles.top}>
@@ -14,7 +24,7 @@ const   PostCard = ({post}) => {
             fill
           />
         </div>}
-        <span className={styles.date}>01.01.2024</span>
+        <span className={styles.date}>{formattedDate}</span>
       </div>
       <div className={styles.bottom}>
         <h1 className={styles.title}>{post.title}</h1>

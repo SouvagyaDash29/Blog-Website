@@ -1,6 +1,7 @@
 .container {
     display: flex;
     gap: 100px;
+    margin-top: 3vw;
   }
   
   .imgContainer {
@@ -21,7 +22,9 @@
   }
   
   .title{
-    font-size: 64px;
+    /* font-size: 64px; */
+    font-size: 3.3vw;
+    text-align: start;
   }
   
   .detail{
@@ -45,6 +48,8 @@
   
   .content{
     font-size: 20px;
+    text-align: justify;
+    line-height: 1.8vw;
   }
   
   @media (max-width:768px){
