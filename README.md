@@ -9,7 +9,7 @@ Welcome to the **Blog Website** repository! This project is a simple yet powerfu
 - [🛠️ Technologies Used](#-technologies-used)
 - [📂 Project Structure](#-project-structure)
 - [🛠️ Installation](#-installation)
-- [📸 Project Preview](#-here-is-some-picture-preview-of-project)
+- [📸 Project Preview](#-project-preview)
 - [📧 Contact](#-contact)
 
 ## 🌟 Features
@@ -63,7 +63,7 @@ To set up the project locally, follow these steps:
   Open http://localhost:3000 to view it in the browser.
 
 
-## Here is some picture Preview of project
+## 📸 Project Preview
 
 ## 1. Home page
   ![Screenshot (250)](https://github.com/user-attachments/assets/7942b008-5719-4994-8042-3e63cc22863b)
