@@ -1,8 +1,6 @@
 const Loading = () => {
     return (
-        <div>
-            Loading Your content
-        </div>
+        <div class="loader"></div>
     );
 }
 
